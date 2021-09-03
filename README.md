@@ -20,7 +20,7 @@ Task Manager with CRUD!
 <li>Task Duedate</li>
 <li>Task Type</li>
 <br>
-<p>Package used</p>
+<p>External Package used</p>
 <li><a href="https://github.com/haruncpi/laravel-id-generator.git">haruncpi/laravel-id-generator </a></li>
 Laravel Id Generator is used for Auto Incrementing the ID with Custom Prefix
 
