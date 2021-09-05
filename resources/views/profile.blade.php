@@ -24,10 +24,10 @@
       <div class="mt-5 md:mt-0 md:col-span-2">
         <form>
           <div class="shadow-md overflow-hidden sm:rounded-md">
-            <div class="px-4 py-5 bg-white sm:p-6">
+            <div class="px-4 py-5 bg-white sm:p-6"> 
               <div class="grid grid-cols-6 gap-6">
                 <div class="col-span-6 sm:col-span-3">
-                  <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+                  <label for="first-name" class="block text-sm font-medium text-gray-700">First name <span class="text-red-500">*</span></label>
                   <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
   
@@ -44,6 +44,18 @@
                   <div class="col-span-6 sm:col-span-3">
                     <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
                     <input type="password" name="confirm-password" id="confirm-password"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  </div>
+                  <div class="col-span-6 sm:col-span-3">
+                    <label for="employee_id" class="block text-sm font-medium text-gray-700">Employee Id</label>
+                    <input type="number" name="employee_id" id="employee_id"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  </div>
+                  <div class="col-span-6 sm:col-span-3">
+                    <label for="designation" class="block text-sm font-medium text-gray-700">Designation</label>
+                    <input type="text" name="designation" id="designation"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                  </div>
+                  <div class="col-span-6 sm:col-span-3">
+                    <label for="department" class="block text-sm font-medium text-gray-700">Department</label>
+                    <input type="text" name="department" id="department"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                   </div>
                 <div class="col-span-6 sm:col-span-3">
                   <label for="country" class="block text-sm font-medium text-gray-700">Country / Region</label>
