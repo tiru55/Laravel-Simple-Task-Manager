@@ -18,11 +18,10 @@ class CreateTasksTable extends Migration
             $table->mediumText('task_title');
             $table->longText('task_description');
             $table->string('task_status');
-            $table->date('task_due_date')->nullable();
+            $table->dateTime('task_due_date')->nullable();
             $table->string('task_type');
             $table->string('task_priority');
             $table->string('task_owner');
-            $table->boolean('is_deleted')->default(false);
             $table->timestamps();
         });
     }

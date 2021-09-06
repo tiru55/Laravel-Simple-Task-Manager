@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-span-6 sm:col-span-3">
                         <label for="task_due_date" class="block text-sm font-medium text-gray-700">Due Date</label>
-                        <input type="date" name="task_due_date" id="task_due_date" autocomplete="task_due_date" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" value="{{ $task->task_due_date}}"> 
+                        <input type="datetime-local" name="task_due_date" id="task_due_date" autocomplete="task_due_date" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" value="{{ $task->task_due_date}}"> 
                       </div>
       
                     <div class="col-span-6 sm:col-span-3">
