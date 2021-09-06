@@ -32,29 +32,29 @@
                 </div>
   
                 <div class="col-span-6 sm:col-span-3">
-                  <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
+                  <label for="last-name" class="block text-sm font-medium text-gray-700">Last name <span class="text-red-500">*</span></label>
                   <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
-                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password <span class="text-red-500">*</span></label>
                     <input type="password" name="password" id="password" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                   </div>
     
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+                    <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password <span class="text-red-500">*</span> </label>
                     <input type="password" name="confirm-password" id="confirm-password"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                   </div>
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="employee_id" class="block text-sm font-medium text-gray-700">Employee Id</label>
+                    <label for="employee_id" class="block text-sm font-medium text-gray-700">Employee Id <span class="text-red-500">*</span></label>
                     <input type="number" name="employee_id" id="employee_id"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                   </div>
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="designation" class="block text-sm font-medium text-gray-700">Designation</label>
+                    <label for="designation" class="block text-sm font-medium text-gray-700">Designation <span class="text-red-500">*</span></label>
                     <input type="text" name="designation" id="designation"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                   </div>
                   <div class="col-span-6 sm:col-span-3">
-                    <label for="department" class="block text-sm font-medium text-gray-700">Department</label>
+                    <label for="department" class="block text-sm font-medium text-gray-700">Department <span class="text-red-500">*</span></label>
                     <input type="text" name="department" id="department"  class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
                   </div>
                 <div class="col-span-6 sm:col-span-3">
