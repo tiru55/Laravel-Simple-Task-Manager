@@ -141,7 +141,9 @@ Ensure your account is using a long, random password to stay secure.
 </div>
 
 <div class="mt-5 md:mt-0 md:col-span-2">
-<form method="POST" action="">
+<form method="POST" action="update_password">
+  @csrf
+  @method('PUT')
 <div class="px-4 py-5 bg-white sm:p-6 shadow sm:rounded-tl-md sm:rounded-tr-md">
 <div class="grid grid-cols-6 gap-6">
   <div class="col-span-6 sm:col-span-4">
@@ -167,7 +169,7 @@ Confirm Password
 </div>
 </div>
 
-          <div class="flex items-center justify-end px-4 py-3 bg-gray-50 text-right sm:px-6 shadow sm:rounded-bl-md sm:rounded-br-md">
+   <div class="flex items-center justify-end px-4 py-3 bg-gray-50 text-right sm:px-6 shadow sm:rounded-bl-md sm:rounded-br-md">
   <div  style="display: none;" class="text-sm text-gray-600 mr-3">
 Saved.
 </div>

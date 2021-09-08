@@ -31,6 +31,7 @@ Route::group(['middleware' => 'auth'],function(){
   Route::get('tasks/{id}/delete',[TaskController::class,'destroy']);
   Route::get('profile',[ProfileController::class,'index'])->name('profile');
   Route::put('update_profile',[ProfileController::class,'update_profile'])->name('update_profile');
-  Route::get('update_password',[UpdatePasswordController::class,'update_pasword'])->name();
+  Route::put('update_password',[UpdatePasswordController::class,'update_password'])->name('update_password');
+  Route::get('date',[TaskController::class,'get_Date']);
 });
 require __DIR__.'/auth.php';

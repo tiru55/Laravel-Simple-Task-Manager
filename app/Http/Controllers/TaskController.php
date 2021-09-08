@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use Haruncpi\LaravelIdGenerator\IdGenerator;
 use Auth;
 
+
 class TaskController extends Controller
 {
     /**
@@ -122,4 +123,6 @@ class TaskController extends Controller
     {
         return view('addtask');
     }
+
+    
 }
