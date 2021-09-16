@@ -32,6 +32,5 @@ Route::group(['middleware' => 'auth'],function(){
   Route::get('profile',[ProfileController::class,'index'])->name('profile');
   Route::put('update_profile',[ProfileController::class,'update_profile'])->name('update_profile');
   Route::put('update_password',[UpdatePasswordController::class,'update_password'])->name('update_password');
-  Route::get('date',[TaskController::class,'get_Date']);
 });
 require __DIR__.'/auth.php';

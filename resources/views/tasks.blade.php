@@ -49,7 +49,7 @@
                     </div>
                   </td>
                   <td class="px-6 py-4 whitespace-nowrap">
-                    @if ($task->status == 'New')
+                    @if ($task->task_status == 'New')
                     <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-300 text-white"> {{ $task->task_status}} </span>
                     @elseif ($task->task_status == 'In Progress')
                     <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-300 text-white"> {{ $task->task_status}} </span>
@@ -63,7 +63,7 @@
                     <div class="text-sm text-gray-600">{{$task->task_priority}}</div>
                   </td>
                   
-                  <td class="px-6 py-4 whitespace-nowrap  text-gray-500 text-md">{{$task->created_at}}</td>
+                  <td class="px-6 py-4 whitespace-nowrap  text-gray-500 text-md">{{$task->created_at->diffForHumans();}}</td>
                   <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                     <a href="tasks/{{ $task->id }}/edit" class="text-indigo-600 hover:text-indigo-900"><ion-icon name="create-outline"></ion-icon></a>
                     <a href="tasks/{{ $task->id }}/delete" class="text-indigo-600 hover:text-indigo-900 ml-2"><ion-icon name="trash-outline"></ion-icon></a>
