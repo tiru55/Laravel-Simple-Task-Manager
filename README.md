@@ -5,7 +5,7 @@
 <h3>Note:- Development in Progress</h3>
 Task Manager with CRUD!
 <br>
-<li>Create Tasks </li>
+<li>CREATE TASKS </li>
 <li>READ TASKS</li>
 <li>UPDATE TASKS</li>
 <li>DELETE TASKS</li>
