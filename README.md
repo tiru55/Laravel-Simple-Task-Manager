@@ -10,18 +10,12 @@ Task Manager with CRUD!
 <br>
 <code>git clone https://github.com/tiru55/Laravel-Simple-Task-Manager.git
 </code>
-<br>
 <code>cd Laravel-Simple-Task-Manager</code>
-<br>
-<code>composer install</code><br>
+<code>composer install</code>
 <code>php artisan config:cache</code>
-<br>
 <code>php artisan config:clear</code>
-<br>
 <code>php artisan key:generate</code>
-<br>
 <code>php artisan migrate</code>
-<br>
 <code>php artisan serve</code>
 </pre>
 
