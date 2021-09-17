@@ -4,13 +4,29 @@
 <br>
 <h3>Note:- Development in Progress</h3>
 Task Manager with CRUD!
-<br>
-<li>CREATE TASKS </li>
-<li>READ TASKS</li>
-<li>UPDATE TASKS</li>
-<li>DELETE TASKS</li>
-<br>
 
+<br><br>
+<pre>
+<strong>Installation Process</strong>
+<br>
+<code>git clone https://github.com/tiru55/Laravel-Simple-Task-Manager.git
+</code>
+<br>
+<code>cd Laravel-Simple-Task-Manager</code>
+<br>
+<code>composer install</code>
+<code>php artisan config:cache</code>
+<br>
+<code>php artisan config:clear</code>
+<br>
+<code>php artisan key:generate</code>
+<br>
+<code>php artisan migrate</code>
+<br>
+<code>php artisan serve</code>
+</pre>
+
+<br><br>
 <b>Feilds for Creating Tasks</b>
 
 <li>Task Title </li>
@@ -22,7 +38,6 @@ Task Manager with CRUD!
 <br>
 <p>External Package used</p>
 <li><a href="https://github.com/haruncpi/laravel-id-generator.git">haruncpi/laravel-id-generator </a></li>
-Laravel Id Generator is used for Auto Incrementing the ID with Custom Prefix
 
 
 <br>
