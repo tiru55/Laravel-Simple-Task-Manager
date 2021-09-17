@@ -4,8 +4,7 @@
 <br>
 <h3>Note:- Development in Progress</h3>
 Task Manager with CRUD!
-
-<br><br>
+<br>
 <pre>
 <strong>Installation Process</strong>
 <br>
@@ -14,7 +13,7 @@ Task Manager with CRUD!
 <br>
 <code>cd Laravel-Simple-Task-Manager</code>
 <br>
-<code>composer install</code>
+<code>composer install</code><br>
 <code>php artisan config:cache</code>
 <br>
 <code>php artisan config:clear</code>
