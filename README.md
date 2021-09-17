@@ -8,8 +8,7 @@ Task Manager with CRUD!
 <pre>
 <strong>Installation Process</strong>
 <br>
-<code>git clone https://github.com/tiru55/Laravel-Simple-Task-Manager.git
-</code>
+<code>git clone https://github.com/tiru55/Laravel-Simple-Task-Manager.git</code>
 <code>cd Laravel-Simple-Task-Manager</code>
 <code>composer install</code>
 <code>php artisan config:cache</code>
