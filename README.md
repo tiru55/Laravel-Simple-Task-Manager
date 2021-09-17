@@ -1,8 +1,8 @@
-<h2 align="center"> Laravel Simple Task Manager </h2>
+<h2 align="center"><font color="red"> Laravel Simple Task Manager</font> </h2>
 <br>
 <p> Simple Task Manager built using Laravel Breeze with Tailwind Css and Mysql </p>
 <br>
-<h3>Note:- Development in Progress</h3>
+<h3>Note:- Development in Progress</h3><br>
 Task Manager with CRUD!
 <br>
 <pre>
