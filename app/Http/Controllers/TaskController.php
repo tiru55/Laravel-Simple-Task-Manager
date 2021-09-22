@@ -7,7 +7,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 use Carbon\Carbon;
 use Haruncpi\LaravelIdGenerator\IdGenerator;
 use Auth;
-
+use App\Notifications\TaskAdded;
 
 class TaskController extends Controller
 {
@@ -18,10 +18,12 @@ class TaskController extends Controller
      */
     public function index()
     {
+        $user = Auth::user()->email; 
         $tasks = Task::where('task_owner','=',Auth::user()->first_name)->get();
         return  view('tasks',[
             'tasks' => $tasks 
         ]);
+        Notification::send($user, new TaskAdded($tasks));
 
         
     }
@@ -44,6 +46,7 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
+        $task_title = $request->task_title;
         $task = Task::create([
             'id' => IdGenerator::generate(['table' => 'tasks', 'field' => 'id'  , 'length' => 10, 'prefix' =>'TSK-']),
             'task_title' => $request->input('task_title'),
@@ -55,8 +58,9 @@ class TaskController extends Controller
             'task_owner' => $request->input('task_owner'),
 
         ]);
-        toast('Your Task Has Been Added..!!','success');
-         return redirect('tasks');
+        toast('Your Task Has Created..!!','success');
+        return redirect('tasks');
+        
     }
 
     /**
@@ -102,7 +106,6 @@ class TaskController extends Controller
         ]);
         toast('Your Task Has Been Updated..!!','success');
         return redirect('tasks');
-       
     }
 
     /**
@@ -113,7 +116,7 @@ class TaskController extends Controller
      */
     public function destroy($id)
     {
-        $task = Task::find($id);
+        $task = Task::findorFail($id);
         $task->delete();
         toast('Your Task Has Been Deleted..!!','success');
         return redirect('tasks');

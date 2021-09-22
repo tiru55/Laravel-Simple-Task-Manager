@@ -6,6 +6,7 @@ use App\Http\Controllers\TaskController;
 use App\Http\Controllers\ProfileController;
 use Carbon\Carbon;
 use Haruncpi\LaravelIdGenerator\IdGenerator;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,6 +32,6 @@ Route::group(['middleware' => 'auth'],function(){
   Route::get('tasks/{id}/delete',[TaskController::class,'destroy']);
   Route::get('profile',[ProfileController::class,'index'])->name('profile');
   Route::put('update_profile',[ProfileController::class,'update_profile'])->name('update_profile');
-  Route::put('update_password',[UpdatePasswordController::class,'update_password'])->name('update_password');
+  // Route::put('update_password',[UpdatePasswordController::class,'update_password'])->name('update_password');
 });
 require __DIR__.'/auth.php';
