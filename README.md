@@ -1,16 +1,24 @@
-<h2 align="center"> Laravel Simple Task Manager </h2>
+<h2 align="center"><font color="red"> Laravel Simple Task Manager</font> </h2>
 <br>
 <p> Simple Task Manager built using Laravel Breeze with Tailwind Css and Mysql </p>
 <br>
-<h3>Note:- Development in Progress</h3>
+<h3>Note:- Development in Progress</h3><br>
 Task Manager with CRUD!
 <br>
-<li>Create Tasks </li>
-<li>READ TASKS</li>
-<li>UPDATE TASKS</li>
-<li>DELETE TASKS</li>
+<pre>
+<strong>Installation Process</strong>
 <br>
+<code>git clone https://github.com/tiru55/Laravel-Simple-Task-Manager.git</code>
+<code>cd Laravel-Simple-Task-Manager</code>
+<code>composer install</code>
+<code>php artisan config:cache</code>
+<code>php artisan config:clear</code>
+<code>php artisan key:generate</code>
+<code>php artisan migrate</code>
+<code>php artisan serve</code>
+</pre>
 
+<br><br>
 <b>Feilds for Creating Tasks</b>
 
 <li>Task Title </li>
@@ -22,7 +30,6 @@ Task Manager with CRUD!
 <br>
 <p>External Package used</p>
 <li><a href="https://github.com/haruncpi/laravel-id-generator.git">haruncpi/laravel-id-generator </a></li>
-Laravel Id Generator is used for Auto Incrementing the ID with Custom Prefix
 
 
 <br>
